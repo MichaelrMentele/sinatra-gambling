@@ -1,0 +1,16 @@
+You currently have <%= session[:user_money] %>
+
+<form action="/eval_guess" method="post">
+  <p>
+    <label>Bet:
+      <input name="bet" type="text" />
+    </label>
+  </p>
+  <p>
+    <label>Guess a number between 1 and 3...</label>
+    <br>
+    <button name="guess" value="1">Guess 1</button>
+    <button name="guess" value="2">Guess 2</button>
+    <button name="guess" value="3">Guess 3</button>
+  </p>
+</form>
